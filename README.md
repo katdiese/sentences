@@ -1,20 +1,22 @@
 <h1>Sentences: Project Description</h1>
-<p>The objective of the game sentences is to use provided words to puzzle together a correct sentence. Upon beginning, user will fill out form to indicate if this is a single or multi player session. Players will be presented a container with a scrambled collection of words in boxes. They will have to assemble the words in the correct order to move on to the next sentence, completing as many sentences as possible (and collecting as many points as possible) in the time allotted.</p>
+<p>The objective of the game sentences is to use provided words to puzzle together a correct sentence. Upon beginning, user will fill out form to indicate if this is a single or multi player session, and what level of difficulty they would like to play. Players will be presented a container with a scrambled collection of words in boxes. They will have to assemble the words in the correct order to move on to the next sentence, completing as many sentences as possible (and collecting as many points as possible) in the time allotted.</p>
 <h2>Who Uses It: </h2>
-<p>players who'd like to play a challenging, intellectually stimulating game/puzzle</p>
-<p>What Outputs Do They Need: </p>
+<p>players who'd like to play a challenging, intellectually stimulating game/puzzle</h2>
+<h2>What Outputs Do They Need: </p>
 <ul>
   <li>Scrambled Words</li>
   <li>An area to drag scrambled words</li>
   <li>Validation of whether the word order is correct</li>
 </ul>
-<h2>Tehnologies I would like to use:</h2>
+<h2>Tehnologies I believe I will use:</h2>
 <ul>
   <li>GitHub</li>
   <li>Pivotal Tracker</li>
   <li>Sketch3 (For wireframing)</li>
   <li>HTML/CSS</li>
   <li>Semantic HTML</li>
+  <li>Gulp</li>
+  <li>Yeoman</li>
   <li>Sass</li>
   <li>Responsive Design/Media Queries</li>
   <li>jQuery UI</li>
