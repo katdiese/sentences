@@ -2,7 +2,7 @@
 <p>The objective of the game sentences is to use provided words to puzzle together a correct sentence. Upon beginning, user will fill out form to indicate if this is a single or multi player session, and what level of difficulty they would like to play. Players will be presented a container with a scrambled collection of words in boxes. They will have to assemble the words in the correct order to move on to the next sentence, completing as many sentences as possible (and collecting as many points as possible) in the time allotted.</p>
 <h2>Who Uses It: </h2>
 <p>players who'd like to play a challenging, intellectually stimulating game/puzzle</h2>
-<h2>What Outputs Do They Need: </p>
+<h2>What Outputs Do They Need: </h2>
 <ul>
   <li>Scrambled Words</li>
   <li>An area to drag scrambled words</li>
