@@ -8,6 +8,16 @@
   <li>An area to drag scrambled words</li>
   <li>Validation of whether the word order is correct</li>
 </ul>
+<h2>What inputs are needed to generate those outputs?</h2>
+<ul>
+  <li>JSON data that can be dynamically appended to the page in a random order:</li>
+  <ul>
+    <li>Arrays of fully completed sentence strings to compare against</li>
+    <li>drag and drop functionality to build sentences</li>
+    <li>Whether it is a single or multi player session</li>
+    <li>What level of difficulty the session will be</li>
+  </ul>
+</ul>
 <h2>Tehnologies I believe I will use:</h2>
 <ul>
   <li>GitHub</li>
