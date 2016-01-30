@@ -18,16 +18,23 @@
       <div class="player-info">Score</div>
     </nav>
     <div class="menu">
-        <h1 class="welcome">Welcome to Setences!</h1>
+      <div class="menuText">
+        <h1 class="welcome">Welcome to Sentences!</h1>
         <button id="rules">Game Rules</button>
         <h3>How many players this round?</h3>
-        <input type="radio" name="onePlayer" value="onePlayer"> One Player<br>
-        <input type="radio" name="twoPlayer" value="twoPlayer">Two Players
+        <label for="onePlayer">
+        <input type="radio" name="numPlayers" id="onePlayer" value="onePlayer"> One Player</label><br>
+        <label for="twoPlayers">
+        <input type="radio" name="numPlayers" id="twoPlayers" value="twoPlayer">Two Players</label>
         <h3>What difficulty do you think you can handle?</h3>
-        <input type="checkbox" name="easy" value="easy">Easy<br>
-        <input type="radio" name="medium" value="medium">Medium<br>
-        <input type="radio" name="hard" value="hard">Hard<br>
+        <label for="easy">
+        <input type="radio" name="difficulty" id="easy" value="easy">Easy</label><br>
+        <label for="medium">
+        <input type="radio" name="difficulty" id="medium" value="medium">Medium</label><br>
+        <label for="hard">
+        <input type="radio" name="difficulty" id="hard" value="hard">Hard</label><br>
         <button id="startGame">Start Game</button>
+      </div>
     </div>
 
     <button>push</button>

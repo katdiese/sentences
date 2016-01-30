@@ -1,9 +1,20 @@
-button, nav .player-info, .menu {
+nav button, .menu button, nav .player-info, .menu {
   border-radius: 10px; }
 
-button {
+nav button, .menu button {
   margin-left: 1rem;
   padding: 1rem; }
+
+.menu {
+  text-align: center;
+  height: 110vh;
+  width: 55%;
+  margin: auto; }
+
+nav button {
+  background-color: #1F2041;
+  color: white;
+  border: none; }
 
 nav img {
   padding: 2rem;
@@ -16,17 +27,19 @@ nav .player-info {
   border: 1px solid black; }
 
 .menu {
-  text-align: center;
-  height: 100vh;
-  width: 55%;
-  margin: auto;
   z-index: 10000;
   background-color: #119DA4; }
   .menu h1 {
     width: 40rem;
     margin: auto;
     padding-top: 3rem; }
+  .menu h3 {
+    border-bottom: 2px solid #FFC857;
+    width: 90%;
+    margin: 2rem auto;
+    padding-bottom: 10px; }
   .menu button {
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    background-color: #FFC857; }
   .menu input {
     margin-right: 10px; }

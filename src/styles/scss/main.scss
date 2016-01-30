@@ -8,13 +8,26 @@ $turquoise: #19647E;
   border-radius: 10px;
 }
 
-button {
+%gameButton {
   @extend %radius;
   margin-left: 1rem;
   padding: 1rem;
   }
 
+%menuDivs {
+  text-align: center;
+  height: 110vh;
+  width: 55%;
+  margin: auto;
+}
+
 nav {
+  button {
+    @extend %gameButton;
+    background-color: $darkBlue;
+    color: white;
+    border: none;
+  }
 
   img {
     padding: 2rem;
@@ -29,12 +42,10 @@ nav {
     border: 1px solid black;
   }
 }
+
 .menu {
   @extend %radius;
-  text-align: center;
-  height: 100vh;
-  width: 55%;
-  margin: auto;
+  @extend %menuDivs;
   z-index: 10000;
   background-color: $lightBlue;
 
@@ -44,8 +55,17 @@ nav {
     padding-top: 3rem;
   }
 
+  h3 {
+    border-bottom: 2px solid $yellow;
+    width: 90%;
+    margin: 2rem auto;
+    padding-bottom: 10px;
+  }
+
   button {
+    @extend %gameButton;
     margin-top: 3rem;
+    background-color: $yellow;
   }
   input {
     margin-right: 10px;
