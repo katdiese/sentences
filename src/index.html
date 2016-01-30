@@ -3,17 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Untitled</title>
-    
+
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link rel="stylesheet" type="text/css" href="styles/css/main.css">
   </head>
   <body>
-    
+    <nav>
+      <img src="images/setencesLogo.png">
+      <button>Menu</button>
+      <button>Start Over</button>
+      <div class="player-info">Player</div>
+      <div class="player-info">Timer</div>
+      <div class="player-info">Score</div>
+    </nav>
+    <div class="menu">
+        <h1 class="welcome">Welcome to Setences!</h1>
+        <button id="rules">Game Rules</button>
+        <h3>How many players this round?</h3>
+        <input type="radio" name="onePlayer" value="onePlayer"> One Player<br>
+        <input type="radio" name="twoPlayer" value="twoPlayer">Two Players
+        <h3>What difficulty do you think you can handle?</h3>
+        <input type="checkbox" name="easy" value="easy">Easy<br>
+        <input type="radio" name="medium" value="medium">Medium<br>
+        <input type="radio" name="hard" value="hard">Hard<br>
+        <button id="startGame">Start Game</button>
+    </div>
+
+    <button>push</button>
+
+    <div id = "wordbank"></div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    
+
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

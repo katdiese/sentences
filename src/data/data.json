@@ -1,0 +1,60 @@
+{
+  "sentences": [
+    {
+    "sentArr": ["If", "the", "world", "didn't", "suck,", "we'd", "all", "fall", "off."],
+    "sentStr": "If the world didn't suck, we'd all fall off."
+    },
+    {
+    "sentArr": ["Please", "don't", "interrupt", "me", "while", "I'm", "ignoring", "you."],
+    "sentStr": "Please don't interrupt me while I'm ignoring you."
+    },
+    {
+    "sentArr": ["A", "wise", "man", "once", "said,", "\"I", "don't", "know,", "go", "ask", "a", "woman.\""],
+    "sentStr": "A wise man once said, \"I don't know, go ask a woman.\""
+    },
+    {
+    "sentArr": ["I'm", "on", "a", "seafood", "diet:", "when", "I", "see", "food,", "I", "eat", "it."],
+    "sentStr": "I'm on a seafood diet: when I see food, I eat it."
+    },
+    {
+    "sentArr": ["Don't", "be", "so", "open-minded", "your", "brains", "fall", "out."],
+    "sentStr": "Don't be so open-minded your brains fall out."
+    },
+    {
+    "sentArr": ["Is", "it", "ok", "to", "use", "the", "AM", "radio", "after", "noon?"],
+    "sentStr":"Is it ok to use the AM radio after noon?"
+    },
+    {
+    "sentArr": ["What", "do", "you", "call", "a", "male", "lady", "bug?"],
+    "sentStr":"What do you call a male lady bug?"
+    },
+    {
+    "sentArr": ["When", "a", "dog", "food", "is", "new", "and", "improved", "flavor,", "who", "tests", "it?"],
+    "sentStr":"When a dog food is new and improved flavor, who tests it?"
+    },
+    {
+    "sentArr": ["I", "don't", "need", "your", "attitude,", "I", "have", "one", "of", "my", "own."],
+    "sentStr": "I don't need your attitude, I have one of my own."
+    },
+    {
+    "sentArr": ["Dogs", "have", "masters,", "Cats", "have", "staff."],
+    "sentStr": "Dogs have masters, Cats have staff."
+    },
+    {
+    "sentArr": ["A", "bargain", "is", "something", "you", "don’t", "need", "at", "a", "price", "you", "can’t", "resist."],
+    "sentStr":"A bargain is something you don’t need at a price you can’t resist."
+    },
+    {
+    "sentArr": ["I", "intend", "to", "live", "forever:", "so", "far,", "so", "good."],
+    "sentStr":"I intend to live forever: so far, so good."
+    },
+    {
+    "sentArr": ["Why", "didn’t", "Noah", "swat", "those", "two", "mosquitoes?"],
+    "sentStr":"Why didn’t Noah swat those two mosquitoes?"
+    },
+    {
+    "sentArr": ["It’s", "true", "hard", "work", "never", "killed", "anybody,", "but", "why", "take", "the", "chance?"],
+    "sentStr":"It’s true hard work never killed anybody, but why take the chance?"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+button, nav .player-info, .menu {
+  border-radius: 10px; }
+
+button {
+  margin-left: 1rem;
+  padding: 1rem; }
+
+nav img {
+  padding: 2rem;
+  text-align: left !important; }
+
+nav .player-info {
+  float: right;
+  padding: 2rem;
+  margin: 1rem;
+  border: 1px solid black; }
+
+.menu {
+  text-align: center;
+  height: 100vh;
+  width: 55%;
+  margin: auto;
+  z-index: 10000;
+  background-color: #119DA4; }
+  .menu h1 {
+    width: 40rem;
+    margin: auto;
+    padding-top: 3rem; }
+  .menu button {
+    margin-top: 3rem; }
+  .menu input {
+    margin-right: 10px; }

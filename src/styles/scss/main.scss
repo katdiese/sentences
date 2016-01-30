@@ -1,0 +1,53 @@
+$darkBlue: #1F2041;
+$purple: #4B3F72;
+$yellow: #FFC857;
+$lightBlue: #119DA4;
+$turquoise: #19647E;
+
+%radius {
+  border-radius: 10px;
+}
+
+button {
+  @extend %radius;
+  margin-left: 1rem;
+  padding: 1rem;
+  }
+
+nav {
+
+  img {
+    padding: 2rem;
+    text-align: left !important;
+  }
+
+  .player-info {
+    @extend %radius;
+    float: right;
+    padding: 2rem;
+    margin: 1rem;
+    border: 1px solid black;
+  }
+}
+.menu {
+  @extend %radius;
+  text-align: center;
+  height: 100vh;
+  width: 55%;
+  margin: auto;
+  z-index: 10000;
+  background-color: $lightBlue;
+
+  h1 {
+    width: 40rem;
+    margin: auto;
+    padding-top: 3rem;
+  }
+
+  button {
+    margin-top: 3rem;
+  }
+  input {
+    margin-right: 10px;
+  }
+}
