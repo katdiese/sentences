@@ -1,11 +1,11 @@
-nav button, .menu button, nav .player-info, .menu {
+nav button, .menu button, nav .player-info, .menu, .rules {
   border-radius: 10px; }
 
 nav button, .menu button {
   margin-left: 1rem;
   padding: 1rem; }
 
-.menu {
+.menu, .rules {
   text-align: center;
   height: 110vh;
   width: 55%;
@@ -17,16 +17,16 @@ nav button {
   border: none; }
 
 nav img {
-  padding: 2rem;
-  text-align: left !important; }
+  padding: 2rem; }
 
 nav .player-info {
   float: right;
   padding: 2rem;
   margin: 1rem;
-  border: 1px solid black; }
+  border: 4px solid black; }
 
 .menu {
+  display: none;
   z-index: 10000;
   background-color: #119DA4; }
   .menu h1 {
@@ -40,6 +40,12 @@ nav .player-info {
     padding-bottom: 10px; }
   .menu button {
     margin-top: 3rem;
-    background-color: #FFC857; }
+    background-color: #FFC857;
+    border: none; }
   .menu input {
     margin-right: 10px; }
+
+.rules {
+  background-color: #4B3F72; }
+  .rules h1 {
+    color: #FFC857; }

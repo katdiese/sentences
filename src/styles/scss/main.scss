@@ -31,7 +31,6 @@ nav {
 
   img {
     padding: 2rem;
-    text-align: left !important;
   }
 
   .player-info {
@@ -39,11 +38,12 @@ nav {
     float: right;
     padding: 2rem;
     margin: 1rem;
-    border: 1px solid black;
+    border: 4px solid black;
   }
 }
 
 .menu {
+  display: none;
   @extend %radius;
   @extend %menuDivs;
   z-index: 10000;
@@ -66,8 +66,19 @@ nav {
     @extend %gameButton;
     margin-top: 3rem;
     background-color: $yellow;
+    border: none;
   }
   input {
     margin-right: 10px;
+  }
+}
+
+.rules {
+  @extend %radius;
+  @extend %menuDivs;
+  background-color: $purple;
+
+  h1 {
+    color: $yellow;
   }
 }

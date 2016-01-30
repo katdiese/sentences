@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Untitled</title>
+<head>
+  <meta charset="utf-8">
+  <title>Untitled</title>
 
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="styles/css/main.css">
-  </head>
-  <body>
-    <nav>
-      <img src="images/setencesLogo.png">
-      <button>Menu</button>
-      <button>Start Over</button>
-      <div class="player-info">Player</div>
-      <div class="player-info">Timer</div>
-      <div class="player-info">Score</div>
-    </nav>
-    <div class="menu">
-      <div class="menuText">
-        <h1 class="welcome">Welcome to Sentences!</h1>
-        <button id="rules">Game Rules</button>
-        <h3>How many players this round?</h3>
-        <label for="onePlayer">
+  <link rel="stylesheet" type="text/css" href="styles/css/main.css">
+</head>
+<body>
+  <nav>
+    <img src="images/setencesLogo.png">
+    <button>Menu</button>
+    <button>Start Over</button>
+    <div class="player-info">Player</div>
+    <div class="player-info">Timer</div>
+    <div class="player-info">Score</div>
+  </nav>
+  <div class="menu">
+    <div class="menuText">
+      <h1 class="welcome">Welcome to Sentences!</h1>
+      <button id="rules">Game Rules</button>
+      <h3>How many players this round?</h3>
+      <label for="onePlayer">
         <input type="radio" name="numPlayers" id="onePlayer" value="onePlayer"> One Player</label><br>
-        <label for="twoPlayers">
+      <label for="twoPlayers">
         <input type="radio" name="numPlayers" id="twoPlayers" value="twoPlayer">Two Players</label>
-        <h3>What difficulty do you think you can handle?</h3>
-        <label for="easy">
+      <h3>What difficulty do you think you can handle?</h3>
+      <label for="easy">
         <input type="radio" name="difficulty" id="easy" value="easy">Easy</label><br>
-        <label for="medium">
+      <label for="medium">
         <input type="radio" name="difficulty" id="medium" value="medium">Medium</label><br>
-        <label for="hard">
+      <label for="hard">
         <input type="radio" name="difficulty" id="hard" value="hard">Hard</label><br>
-        <button id="startGame">Start Game</button>
-      </div>
+      <button id="startGame">Start Game</button>
     </div>
+  </div>
+  <div class="rules">
+    <h1>How Sentences Works</h1>
+    <h1>Rules</h1>
+  </div>
 
-    <button>push</button>
+  <button>push</button>
 
-    <div id = "wordbank"></div>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <div id = "wordbank"></div>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
