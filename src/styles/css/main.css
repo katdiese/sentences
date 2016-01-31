@@ -1,4 +1,4 @@
-nav button, .menu button, .rules button, nav .player-info, .menu, .rules, .rules .ruleInfo, main .wordbank, main .solution {
+nav button, .menu button, .rules button, nav .player-info, .menu, .rules, .rules .ruleInfo, main .wordbank, main .solution, .wordStyles {
   border-radius: 10px; }
 
 nav button, .menu button, .rules button {
@@ -96,3 +96,12 @@ main {
     width: 75%;
     margin: auto;
     background-color: #a8a8a8; }
+
+.wordStyles {
+  background: #4B3F72;
+  float: left;
+  margin: 1rem; }
+  .wordStyles p {
+    padding: 0.5rem 1rem;
+    color: white;
+    size: 2rem; }
