@@ -158,3 +158,16 @@ main {
 
 }
 
+.wordStyles {
+  @extend %radius;
+  background: $purple;
+  float: left;
+  margin: 1rem;
+
+   p {
+    padding: 0.5rem 1rem;
+    color: white;
+    size: 2rem;
+   }
+}
+
