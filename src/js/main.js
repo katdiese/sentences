@@ -1,14 +1,27 @@
 // add scripts
 
 $(document).on('ready', function() {
-  $.ajax({
+  $('#showRules').on('click', function() {
+    $('.menu').toggle();
+    $('.rules').toggle();
+  });
+  $('#menuReturn').on('click', function() {
+    $('.rules').toggle();
+    $('.menu').toggle();
+  });
+
+});
+
+
+function getWords() {
+    $.ajax({
     url: 'data/data.json',
     method: 'GET'
   }).then(function(data) {
     var length = data.sentences.length - 1;
     console.log(length);
     $('button').on('click', function() {
-      data.sentences.length
+      // data.sentences.length;
       var randStr = Math.round(Math.random() * (length));
       var currSentence = data.sentences[randStr];
 
@@ -24,4 +37,4 @@ $(document).on('ready', function() {
       length = length-1;
     });
   });
-});
+}

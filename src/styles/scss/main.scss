@@ -75,10 +75,10 @@ nav {
 }
 
 .rules {
-  // display: none;
   @extend %radius;
   @extend %menuDivs;
   background-color: $purple;
+  display: none;
 
   h1 {
     color: $yellow;
