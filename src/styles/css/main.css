@@ -39,8 +39,8 @@ nav .player-info {
   z-index: 10000;
   background-color: #119DA4; }
   .menu h3 {
-    border-bottom: 2px solid #FFC857;
-    width: 90%;
+    border-bottom: 5px dashed #FFC857;
+    width: 85%;
     margin: 2rem auto;
     padding-bottom: 10px; }
   .menu button {
@@ -52,6 +52,8 @@ nav .player-info {
     background-color: transparent;
     color: #19647E;
     font-weight: bold; }
+  .menu label {
+    border: 1px solid #119DA4; }
   .menu label:hover {
     border: 1px dotted #FFC857;
     padding: 0 1rem;

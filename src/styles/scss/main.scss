@@ -66,8 +66,8 @@ nav {
   background-color: $lightBlue;
 
   h3 {
-    border-bottom: 2px solid $yellow;
-    width: 90%;
+    border-bottom: 5px dashed $yellow;
+    width: 85%;
     margin: 2rem auto;
     padding-bottom: 10px;
   }
@@ -84,6 +84,10 @@ nav {
     background-color: transparent;
     color: $turquoise;
     font-weight: bold;
+  }
+
+  label {
+    border: 1px solid $lightBlue;
   }
 
   label:hover {
