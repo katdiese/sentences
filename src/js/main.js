@@ -1,6 +1,12 @@
 // add scripts
 
 $(document).on('ready', function() {
+  buttons();
+
+
+});
+
+function buttons() {
   $('#showRules').on('click', function() {
     $('.menu').toggle();
     $('.rules').toggle();
@@ -9,9 +15,13 @@ $(document).on('ready', function() {
     $('.rules').toggle();
     $('.menu').toggle();
   });
-
-});
-
+  $('#startGame').on('click', function() {
+    $('.menu').toggle();
+  });
+  $('#showMenu').on('click', function() {
+    $('.menu').toggle();
+  });
+}
 
 function getWords() {
     $.ajax({
