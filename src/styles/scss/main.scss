@@ -12,13 +12,21 @@ $turquoise: #19647E;
   @extend %radius;
   margin-left: 1rem;
   padding: 1rem;
+  border: none;
   }
 
 %menuDivs {
   text-align: center;
-  height: 110vh;
+  height: 100%;
   width: 55%;
   margin: auto;
+
+  h1 {
+    padding-top: 3rem;
+  }
+  button {
+    margin-bottom: 1.5rem;
+  }
 }
 
 nav {
@@ -26,7 +34,7 @@ nav {
     @extend %gameButton;
     background-color: $darkBlue;
     color: white;
-    border: none;
+    // border: none;
   }
 
   img {
@@ -43,17 +51,11 @@ nav {
 }
 
 .menu {
-  display: none;
+  // display: none;
   @extend %radius;
   @extend %menuDivs;
   z-index: 10000;
   background-color: $lightBlue;
-
-  h1 {
-    width: 40rem;
-    margin: auto;
-    padding-top: 3rem;
-  }
 
   h3 {
     border-bottom: 2px solid $yellow;
@@ -66,7 +68,6 @@ nav {
     @extend %gameButton;
     margin-top: 3rem;
     background-color: $yellow;
-    border: none;
   }
   input {
     margin-right: 10px;
@@ -74,11 +75,26 @@ nav {
 }
 
 .rules {
+  // display: none;
   @extend %radius;
   @extend %menuDivs;
   background-color: $purple;
 
   h1 {
     color: $yellow;
+  }
+
+  button {
+    @extend %gameButton;
+    background-color: $yellow;
+  }
+
+  .ruleInfo {
+    @extend %radius;
+    width: 75%;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    font-weight: bold;
   }
 }

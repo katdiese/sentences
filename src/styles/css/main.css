@@ -1,20 +1,24 @@
-nav button, .menu button, nav .player-info, .menu, .rules {
+nav button, .menu button, .rules button, nav .player-info, .menu, .rules, .rules .ruleInfo {
   border-radius: 10px; }
 
-nav button, .menu button {
+nav button, .menu button, .rules button {
   margin-left: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  border: none; }
 
 .menu, .rules {
   text-align: center;
-  height: 110vh;
+  height: 100%;
   width: 55%;
   margin: auto; }
+  .menu h1, .rules h1 {
+    padding-top: 3rem; }
+  .menu button, .rules button {
+    margin-bottom: 1.5rem; }
 
 nav button {
   background-color: #1F2041;
-  color: white;
-  border: none; }
+  color: white; }
 
 nav img {
   padding: 2rem; }
@@ -26,13 +30,8 @@ nav .player-info {
   border: 4px solid black; }
 
 .menu {
-  display: none;
   z-index: 10000;
   background-color: #119DA4; }
-  .menu h1 {
-    width: 40rem;
-    margin: auto;
-    padding-top: 3rem; }
   .menu h3 {
     border-bottom: 2px solid #FFC857;
     width: 90%;
@@ -40,8 +39,7 @@ nav .player-info {
     padding-bottom: 10px; }
   .menu button {
     margin-top: 3rem;
-    background-color: #FFC857;
-    border: none; }
+    background-color: #FFC857; }
   .menu input {
     margin-right: 10px; }
 
@@ -49,3 +47,11 @@ nav .player-info {
   background-color: #4B3F72; }
   .rules h1 {
     color: #FFC857; }
+  .rules button {
+    background-color: #FFC857; }
+  .rules .ruleInfo {
+    width: 75%;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    font-weight: bold; }
