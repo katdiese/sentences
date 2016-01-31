@@ -2,6 +2,7 @@
 
 $(document).on('ready', function() {
   buttons();
+  hoverChoice();
 
 
 });
@@ -9,11 +10,11 @@ $(document).on('ready', function() {
 function buttons() {
   $('#showRules').on('click', function() {
     $('.menu').toggle();
-    $('.rules').toggle();
+    $('.rules').fadeIn();
   });
   $('#menuReturn').on('click', function() {
     $('.rules').toggle();
-    $('.menu').toggle();
+    $('.menu').fadeIn();
   });
   $('#startGame').on('click', function() {
     $('.menu').hide();
@@ -21,7 +22,7 @@ function buttons() {
   });
   $('#showMenu').on('click', function() {
     $('.gamePlay').hide();
-    $('.menu').show();
+    $('.menu').fadeIn();
   });
 }
 
