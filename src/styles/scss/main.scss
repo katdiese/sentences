@@ -3,6 +3,8 @@ $purple: #4B3F72;
 $yellow: #FFC857;
 $lightBlue: #119DA4;
 $turquoise: #19647E;
+$lightGray: #d3d3d3;
+$darkGray: #a8a8a8;
 
 %radius {
   border-radius: 10px;
@@ -34,7 +36,6 @@ nav {
     @extend %gameButton;
     background-color: $darkBlue;
     color: white;
-    // border: none;
   }
 
   img {
@@ -97,4 +98,29 @@ nav {
     background-color: white;
     font-weight: bold;
   }
+}
+
+main {
+  display: none;
+  color: $purple;
+  margin-bottom: 9rem;
+
+  h1 {
+    text-align: center;
+  }
+  .wordbank {
+    @extend %radius;
+    height: 30vh;
+    width: 65%;
+    margin: auto;
+    background-color: $lightGray;
+  }
+  .solution {
+    @extend %radius;
+    height: 50vh;
+    width: 75%;
+    margin: auto;
+    background-color: $darkGray;
+  }
+
 }

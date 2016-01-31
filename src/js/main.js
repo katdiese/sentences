@@ -16,10 +16,12 @@ function buttons() {
     $('.menu').toggle();
   });
   $('#startGame').on('click', function() {
-    $('.menu').toggle();
+    $('.menu').hide();
+    $('.gamePlay').show();
   });
   $('#showMenu').on('click', function() {
-    $('.menu').toggle();
+    $('.gamePlay').hide();
+    $('.menu').show();
   });
 }
 
