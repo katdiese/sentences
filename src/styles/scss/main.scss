@@ -36,6 +36,13 @@ nav {
     @extend %gameButton;
     background-color: $darkBlue;
     color: white;
+    font-weight: bold;
+    border: 4px dotted $darkBlue;
+  }
+
+  button:hover {
+    background: transparent;
+    color: $darkBlue;
   }
 
   img {
@@ -68,8 +75,23 @@ nav {
   button {
     @extend %gameButton;
     margin-top: 3rem;
-    background-color: $yellow;
+    background-color: $turquoise;
+    color: white;
+    border: 4px double $turquoise;
   }
+
+  button:hover {
+    background-color: transparent;
+    color: $turquoise;
+    font-weight: bold;
+  }
+
+  label:hover {
+    border: 1px dotted $yellow;
+    padding: 0 1rem;
+    cursor: pointer;
+  }
+
   input {
     margin-right: 10px;
   }
@@ -88,6 +110,13 @@ nav {
   button {
     @extend %gameButton;
     background-color: $yellow;
+    border: 4px double $yellow;
+    font-weight: bold;
+  }
+
+  button:hover {
+    background: transparent;
+    color: $yellow;
   }
 
   .ruleInfo {
@@ -124,3 +153,4 @@ main {
   }
 
 }
+

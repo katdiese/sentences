@@ -18,7 +18,13 @@ nav button, .menu button, .rules button {
 
 nav button {
   background-color: #1F2041;
-  color: white; }
+  color: white;
+  font-weight: bold;
+  border: 4px dotted #1F2041; }
+
+nav button:hover {
+  background: transparent;
+  color: #1F2041; }
 
 nav img {
   padding: 2rem; }
@@ -39,7 +45,17 @@ nav .player-info {
     padding-bottom: 10px; }
   .menu button {
     margin-top: 3rem;
-    background-color: #FFC857; }
+    background-color: #19647E;
+    color: white;
+    border: 4px double #19647E; }
+  .menu button:hover {
+    background-color: transparent;
+    color: #19647E;
+    font-weight: bold; }
+  .menu label:hover {
+    border: 1px dotted #FFC857;
+    padding: 0 1rem;
+    cursor: pointer; }
   .menu input {
     margin-right: 10px; }
 
@@ -49,7 +65,12 @@ nav .player-info {
   .rules h1 {
     color: #FFC857; }
   .rules button {
-    background-color: #FFC857; }
+    background-color: #FFC857;
+    border: 4px double #FFC857;
+    font-weight: bold; }
+  .rules button:hover {
+    background: transparent;
+    color: #FFC857; }
   .rules .ruleInfo {
     width: 75%;
     margin: 1rem auto;
