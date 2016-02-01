@@ -54,10 +54,10 @@ nav .player-info {
     font-weight: bold; }
   .menu label {
     border: 1px solid #119DA4; }
-  .menu label:hover {
-    border: 1px dotted #FFC857;
-    padding: 0 1rem;
-    cursor: pointer; }
+    .menu label:hover {
+      border: 1px dotted #FFC857;
+      padding: 0 1rem;
+      cursor: pointer; }
   .menu input {
     margin-right: 10px; }
 
@@ -70,9 +70,9 @@ nav .player-info {
     background-color: #FFC857;
     border: 4px double #FFC857;
     font-weight: bold; }
-  .rules button:hover {
-    background: transparent;
-    color: #FFC857; }
+    .rules button:hover {
+      background: transparent;
+      color: #FFC857; }
   .rules .ruleInfo {
     width: 75%;
     margin: 1rem auto;
@@ -92,16 +92,28 @@ main {
     margin: auto;
     background-color: #d3d3d3; }
   main .solution {
-    height: 50vh;
+    height: 100vh;
     width: 75%;
     margin: auto;
     background-color: #a8a8a8; }
 
 .wordStyles {
   background: #4B3F72;
-  float: left;
+  display: inline-block;
   margin: 1rem; }
+  .wordStyles:hover {
+    cursor: pointer; }
   .wordStyles p {
     padding: 0.5rem 1rem;
     color: white;
-    size: 2rem; }
+    font-size: 2rem; }
+
+.dropStyles {
+  display: inline-block;
+  height: 15rem;
+  width: 15rem;
+  background-color: #119DA4;
+  margin: 1rem; }
+
+.highlight {
+  background-color: #FFC857; }

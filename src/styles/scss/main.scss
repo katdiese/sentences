@@ -88,12 +88,12 @@ nav {
 
   label {
     border: 1px solid $lightBlue;
-  }
 
-  label:hover {
+    &:hover {
     border: 1px dotted $yellow;
     padding: 0 1rem;
     cursor: pointer;
+  }
   }
 
   input {
@@ -116,11 +116,11 @@ nav {
     background-color: $yellow;
     border: 4px double $yellow;
     font-weight: bold;
-  }
 
-  button:hover {
-    background: transparent;
-    color: $yellow;
+    &:hover {
+      background: transparent;
+      color: $yellow;
+    }
   }
 
   .ruleInfo {
@@ -150,7 +150,7 @@ main {
   }
   .solution {
     @extend %radius;
-    height: 50vh;
+    height: 100vh;
     width: 75%;
     margin: auto;
     background-color: $darkGray;
@@ -161,13 +161,29 @@ main {
 .wordStyles {
   @extend %radius;
   background: $purple;
-  float: left;
+  display: inline-block;
   margin: 1rem;
+
+  &:hover {
+    cursor: pointer;
+   }
 
    p {
     padding: 0.5rem 1rem;
     color: white;
-    size: 2rem;
+    font-size: 2rem;
    }
+}
+
+.dropStyles {
+  display: inline-block;
+  height: 15rem;
+  width: 15rem;
+  background-color: $lightBlue;
+  margin: 1rem;
+}
+
+.highlight {
+  background-color: $yellow;
 }
 
