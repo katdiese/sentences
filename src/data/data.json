@@ -50,11 +50,69 @@
     },
     {
     "sentArr": ["Why", "didn’t", "Noah", "swat", "those", "two", "mosquitoes?"],
-    "sentStr":"Why didn’t Noah swat those two mosquitoes?"
+    "sentStr":"Why didnt Noah swat those two mosquitoes?"
     },
     {
     "sentArr": ["It’s", "true", "hard", "work", "never", "killed", "anybody,", "but", "why", "take", "the", "chance?"],
     "sentStr":"It’s true hard work never killed anybody, but why take the chance?"
+    },
+    {
+    "sentArr": ["Don't", "take", "life", "too", "seriously,", "you'll", "never", "get", "out", "of", "it", "alive."],
+    "sentStr": "Dont take life too seriously, you'll never get out of it alive."
     }
+    ,
+    {
+    "sentArr": ["I", "can", "resist", "everything", "except", "temptation."],
+    "sentStr": "I can resist everything except temptation."
+    },
+    {
+    "sentArr": ["Always", "remember", "that", "you", "are", "absolutely", "unique,", "just", "like", "everyone", "else."],
+    "sentStr": "Always remember that you are absolutely unique, just like everyone else."
+    },
+    {
+    "sentArr": ["I'm", "sorry,", "if", "you", "were", "right,", "I'd", "agree", "with", "you."],
+    "sentStr": "I'm sorry, if you were right, I'd agree with you."
+    },
+    {
+    "sentArr": ["Expert:", "someone", "who", "makes", "three", "correct", "guesses", "consecutively."],
+    "sentStr": "Expert: someone who makes three correct guesses consecutively"
+    },
+    {
+    "sentArr": ["If", "two", "wrongs", "don't", "make", "a", "right,", "try", "three."],
+    "sentStr": "If two wrongs don't make a right, try three."
+    },
+    {
+    "sentArr": ["What", "you", "do", "today", "can", "improve", "all", "your", "tomorrows."],
+    "sentStr": "What you do today can improve all your tomorrows."
+    },
+    {
+    "sentArr": ["The", "secret", "of", "getting", "ahead", "is", "getting", "started."],
+    "sentStr": "The secret of getting ahead is getting started."
+    },
+    {
+    "sentArr": ["Arriving", "at", "one", "goal", "is", "the", "starting", "point", "to", "another."],
+    "sentStr": "Arriving at one goal is the starting point to another."
+    },
+    {
+    "sentArr": ["No", "matter", "what", "people", "tell", "you,", "words", "and", "ideas", "can", "change", "the", "world."],
+    "sentStr": "No matter what people tell you, words and ideas can change the world."
+    },
+    {
+    "sentArr": ["No", "act", "of", "kindness,", "no", "matter", "how", "small,", "is", "ever", "wasted."],
+    "sentStr": "No act of kindness, no matter how small, is ever wasted."
+    },
+    {
+    "sentArr": ["We", "shall", "never", "know", "all", "the", "good", "that", "a", "simple", "smile", "can", "do."],
+    "sentStr": "We shall never know all the good that a simple smile can do."
+    },
+    {
+    "sentArr": ["Most", "folks", "are", "as", "happy", "as", "they", "make", "up", "their", "minds", "to", "be."],
+    "sentStr": "Most folks are as happy as they make up their minds to be."
+    },
+    {
+    "sentArr": ["Whatever", "you", "do", "in", "life,", "surround", "yourself", "with", "smart", "people", "who'll", "argue", "with", "you."],
+    "sentStr": "Whatever you do in life, surround yourself with smart people who'll argue with you."
+    }
+
   ]
 }

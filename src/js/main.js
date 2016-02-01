@@ -34,11 +34,13 @@ function getWords() {
     console.log(length);
     $('button').on('click', function() {
       var thisSentence = findRandSentence(data);
-      parseSentence(thisSentence);
+      droppableInOrder(thisSentence);
+      scrambleSentence(thisSentence);
     });
   });
 }
 
+//finds random sentence from data
 function findRandSentence(data) {
   var length = data.sentences.length - 1;
   var randStr = Math.round(Math.random() * (length));
@@ -46,12 +48,59 @@ function findRandSentence(data) {
   return currSentence.sentArr;
 }
 
-function parseSentence(sentence) {
+
+function scrambleSentence(sentence) {
   var sentLength = sentence.length -1;
   while(sentLength >= 0) {
+
     var randIndex = Math.round(Math.random() * sentLength);
-    $('#wordbank').append("<div class='wordStyles'><p>" + sentence[randIndex] + "</p></div>");
+    currDragClass = dragClass(sentence[randIndex]);
+    $('#wordbank').append('<div class= "wordStyles" id= '+currDragClass+'><p>' + sentence[randIndex] + '</p></div>');
+    $('.wordStyles').draggable();
     sentence.splice(randIndex, 1);
     sentLength--;
   }
+  $('#wordbank').css('height', '100%');
+}
+
+function droppableInOrder(sentence) {
+  console.log(sentence);
+  for(i = 0; i < sentence.length; i++) {
+    currDropClass = dropClass(sentence[i]);
+    currDropClassID = "#" + currDropClass;
+    dragName = dragClass(sentence[i]);
+    currDragClassID = "#" + dragName;
+    $('#solution').append('<div class="dropStyles" id='+currDropClass+'></div>');
+    $(currDropClassID).droppable({
+      accept: currDragClassID,
+      drop: function(event, ui) {
+        $(this)
+        .addClass('highlight');
+      }
+    });
+  }
+  $('#solution').css('height', '100%');
+}
+
+var dragClass = function(thisClass) {
+  var noPunctuation = thisClass.replace(/[.',\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+  return "drag-" + noPunctuation;
+}
+
+var dropClass = function(thisClass) {
+  var noPunctuation = thisClass.replace(/[.?',\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+  return "drop-" + noPunctuation;
+}
+
+
+function drop(drag, dropClass) {
+  console.log(drag, dropClass);
+
+  $(dropClass).droppable({
+  drop: function(event, ui) {
+    $(this)
+      .addClass("highlight")
+      // .html("<p>dropped!</p>");
+  }
+});
 }
