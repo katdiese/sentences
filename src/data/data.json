@@ -13,10 +13,6 @@
     "sentStr": "A wise man once said, \"I don't know, go ask a woman.\""
     },
     {
-    "sentArr": ["I'm", "on", "a", "seafood", "diet:", "when", "I", "see", "food,", "I", "eat", "it."],
-    "sentStr": "I'm on a seafood diet: when I see food, I eat it."
-    },
-    {
     "sentArr": ["Don't", "be", "so", "open-minded", "your", "brains", "fall", "out."],
     "sentStr": "Don't be so open-minded your brains fall out."
     },
@@ -33,16 +29,8 @@
     "sentStr":"When a dog food is new and improved flavor, who tests it?"
     },
     {
-    "sentArr": ["I", "don't", "need", "your", "attitude,", "I", "have", "one", "of", "my", "own."],
-    "sentStr": "I don't need your attitude, I have one of my own."
-    },
-    {
     "sentArr": ["Dogs", "have", "masters,", "Cats", "have", "staff."],
     "sentStr": "Dogs have masters, Cats have staff."
-    },
-    {
-    "sentArr": ["A", "bargain", "is", "something", "you", "don’t", "need", "at", "a", "price", "you", "can’t", "resist."],
-    "sentStr":"A bargain is something you don’t need at a price you can’t resist."
     },
     {
     "sentArr": ["I", "intend", "to", "live", "forever:", "so", "far,", "so", "good."],
@@ -59,8 +47,7 @@
     {
     "sentArr": ["Don't", "take", "life", "too", "seriously,", "you'll", "never", "get", "out", "of", "it", "alive."],
     "sentStr": "Dont take life too seriously, you'll never get out of it alive."
-    }
-    ,
+    },
     {
     "sentArr": ["I", "can", "resist", "everything", "except", "temptation."],
     "sentStr": "I can resist everything except temptation."
