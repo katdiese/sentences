@@ -71,7 +71,13 @@ function droppableInOrder(sentence) {
     dragName = dragClass(sentence[i]);
     currDragClassID = "#" + dragName;
     $('#solution').append('<div class="dropStyles" id='+currDropClass+'></div>');
-    drop(currDragClassID, currDropClassID);
+    $(currDropClassID).droppable({
+      accept: currDragClassID,
+      drop: function(event, ui) {
+        $(this)
+        .addClass('highlight');
+      }
+    });
   }
   $('#solution').css('height', '100%');
 }
