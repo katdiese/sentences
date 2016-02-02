@@ -19,7 +19,7 @@ $(document).ready(function() {
     clearInterval(timer);
     min = 1;
     sec = 30;
-    time = 1000 * 30;
+    time = 1000 * 91;
     timer = setInterval(function() {tick()}, "1000");
     timerStop = setTimeout(function() {clearClock()}, time);
   }
@@ -59,7 +59,7 @@ $(document).ready(function() {
 
   function countDown() {
     var timeElapsed = time-= 1000;
-    console.log(timeElapsed);
+    // console.log(timeElapsed);
   }
 
 
