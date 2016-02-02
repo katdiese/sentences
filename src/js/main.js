@@ -3,6 +3,7 @@
 $(document).on('ready', function() {
   buttons();
   getWords();
+  // allRight();
 
 
 });
@@ -31,12 +32,32 @@ function getWords() {
     url: 'data/data.json',
     method: 'GET'
   }).then(function(data) {
-    console.log(length);
-    $('button').on('click', function() {
+    var sentenceLength = 0;
+    var score = 0;
+    $('#startGame').on('click', function() {
       var thisSentence = findRandSentence(data);
-      droppableInOrder(thisSentence);
-      scrambleSentence(thisSentence);
+      sentenceLength = thisSentence.length;
+      console.log(sentenceLength);
+      nextRound(thisSentence);
     });
+    $('#next').on('click', function(){
+      if(sentenceLength == $('.highlight').length) {
+        score++;
+        $('#score').html('Score: ' + score)
+      }
+      var nextSentence = findRandSentence(data);
+      sentenceLength = nextSentence.length;
+      nextRound(nextSentence);
+    });
+    $('#restartGame').on('click', function(){
+      $('#wordbank').empty();
+      $('#solution').empty();
+      var thisSentence = findRandSentence(data);
+      nextRound(thisSentence);
+    });
+    // $("#next").on('click', function() {
+    //   checkCorrect(thisSentence);
+    // });
   });
 }
 
@@ -47,6 +68,7 @@ function findRandSentence(data) {
   var currSentence = data.sentences[randStr];
   return currSentence.sentArr;
 }
+
 
 
 function scrambleSentence(sentence) {
@@ -76,31 +98,33 @@ function droppableInOrder(sentence) {
       drop: function(event, ui) {
         $(this)
         .addClass('highlight');
-      }
+    }
     });
   }
   $('#solution').css('height', '100%');
 }
 
+function checkCorrect(checkSentence, highlightSentence, score) {
+  if(checkSentence.length === highlightSentence.length) {
+    score++;
+    console.log(score);
+  }
+}
+
 var dragClass = function(thisClass) {
-  var noPunctuation = thisClass.replace(/[.',\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+  var noPunctuation = thisClass.replace(/[.?"',\/#!$%\^&\*;:{}=\-_`~()]/g,"");
   return "drag-" + noPunctuation;
 }
 
 var dropClass = function(thisClass) {
-  var noPunctuation = thisClass.replace(/[.?',\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+  var noPunctuation = thisClass.replace(/[.?"',\/#!$%\^&\*;:{}=\-_`~()]/g,"");
   return "drop-" + noPunctuation;
 }
 
 
-function drop(drag, dropClass) {
-  console.log(drag, dropClass);
-
-  $(dropClass).droppable({
-  drop: function(event, ui) {
-    $(this)
-      .addClass("highlight")
-      // .html("<p>dropped!</p>");
-  }
-});
+function nextRound(sentence) {
+  $('#wordbank').empty();
+  $('#solution').empty();
+  droppableInOrder(sentence);
+  scrambleSentence(sentence);
 }

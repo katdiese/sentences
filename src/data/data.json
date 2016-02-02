@@ -29,8 +29,8 @@
     "sentStr":"When a dog food is new and improved flavor, who tests it?"
     },
     {
-    "sentArr": ["Dogs", "have", "masters,", "Cats", "have", "staff."],
-    "sentStr": "Dogs have masters, Cats have staff."
+    "sentArr": ["Dogs", "need", "masters,", "Cats", "have", "staff."],
+    "sentStr": "Dogs have masters, Cats need staff."
     },
     {
     "sentArr": ["I", "intend", "to", "live", "forever:", "so", "far,", "so", "good."],
@@ -57,8 +57,8 @@
     "sentStr": "Always remember that you are absolutely unique, just like everyone else."
     },
     {
-    "sentArr": ["I'm", "sorry,", "if", "you", "were", "right,", "I'd", "agree", "with", "you."],
-    "sentStr": "I'm sorry, if you were right, I'd agree with you."
+    "sentArr": ["I'm", "sorry,", "if", "you", "were", "right,", "I'd", "agree."],
+    "sentStr": "I'm sorry, if you were right, I'd agree."
     },
     {
     "sentArr": ["Expert:", "someone", "who", "makes", "three", "correct", "guesses", "consecutively."],
@@ -73,8 +73,8 @@
     "sentStr": "What you do today can improve all your tomorrows."
     },
     {
-    "sentArr": ["The", "secret", "of", "getting", "ahead", "is", "getting", "started."],
-    "sentStr": "The secret of getting ahead is getting started."
+    "sentArr": ["The", "secret", "of", "getting", "ahead", "is", "to", "begin."],
+    "sentStr": "The secret of getting ahead is to begin."
     },
     {
     "sentArr": ["Arriving", "at", "one", "goal", "is", "the", "starting", "point", "to", "another."],
