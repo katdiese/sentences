@@ -42,7 +42,7 @@ function getWords() {
     });
     $('#next').on('click', function(){
       if(sentenceLength == $('.highlight').length) {
-        score++;
+        score+=sentenceLength;
         $('#score').html('Score: ' + score)
       }
       var nextSentence = findRandSentence(data);
@@ -63,9 +63,11 @@ function getWords() {
 
 //finds random sentence from data
 function findRandSentence(data) {
+  // console.log(data.sentences[16]);
   var length = data.sentences.length - 1;
   var randStr = Math.round(Math.random() * (length));
   var currSentence = data.sentences[randStr];
+  console.log(currSentence);
   return currSentence.sentArr;
 }
 
@@ -86,7 +88,7 @@ function scrambleSentence(sentence) {
 }
 
 function droppableInOrder(sentence) {
-  console.log(sentence);
+  // console.log(sentence);
   for(i = 0; i < sentence.length; i++) {
     currDropClass = dropClass(sentence[i]);
     currDropClassID = "#" + currDropClass;
