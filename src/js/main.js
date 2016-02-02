@@ -1,8 +1,14 @@
 // add scripts
 
-var score ;
+var score;
+var easy;
+var hard;
 
 $(document).on('ready', function() {
+
+  $('input').on('checked', function(){
+    console.log('checked');
+  });
 
   buttons();
   getWords();
@@ -45,6 +51,7 @@ function getWords() {
     var sentenceLength = 0;
     // var score = 0;
     $('#startGame').on('click', function() {
+      checkDifficultyLevel();
       score = 0;
       var thisSentence = findRandSentence(data);
       sentenceLength = thisSentence.length;
@@ -52,7 +59,7 @@ function getWords() {
       nextRound(thisSentence);
     });
     $('#next').on('click', function(){
-      if(sentenceLength == $('.highlight').length) {
+      if(sentenceLength == $('.highlight').length || $('.correct').length) {
         score+=sentenceLength;
         $('#finalScore').html(score);
         $('#score').html('Score: ' + score)
@@ -83,6 +90,23 @@ function findRandSentence(data) {
   return currSentence.sentArr;
 }
 
+function checkDifficultyLevel() {
+  if($('input:checked').val() === "easy") {
+        console.log("easy checked!");
+        easy = true;
+        hard = false;
+      }
+  else if($('input:checked').val() === "hard") {
+        console.log("Hard checked!");
+        hard = true;
+        easy = false;
+      }
+  else {
+        easy = true;
+        hard = false;
+        console.log(easy);
+      }
+}
 
 
 function scrambleSentence(sentence) {
@@ -110,9 +134,16 @@ function droppableInOrder(sentence) {
     $(currDropClassID).droppable({
       accept: currDragClassID,
       drop: function(event, ui) {
-        $(this)
-        .addClass('highlight');
-    }
+        if(easy) {
+          $(this)
+            .addClass('highlight');
+          }
+        else if(hard) {
+          $(this)
+            .addClass('correct');
+          }
+        }
+
     });
   }
   $('#solution').css('height', '100%');
