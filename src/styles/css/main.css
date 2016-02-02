@@ -1,19 +1,19 @@
-nav button, .menu button, .rules button, nav .player-info, .menu, .rules, .rules .ruleInfo, main .wordbank, main .solution, .wordStyles {
+nav button, .menu button, .rules button, .gameEnd button, nav .player-info, .menu, .rules, .rules .ruleInfo, main .wordbank, main .solution, .wordStyles, .gameEnd {
   border-radius: 10px; }
 
-nav button, .menu button, .rules button {
+nav button, .menu button, .rules button, .gameEnd button {
   margin-left: 1rem;
   padding: 1rem;
   border: none; }
 
-.menu, .rules {
+.menu, .rules, .gameEnd {
   text-align: center;
   height: 100%;
   width: 55%;
   margin: auto; }
-  .menu h1, .rules h1 {
+  .menu h1, .rules h1, .gameEnd h1 {
     padding-top: 3rem; }
-  .menu button, .rules button {
+  .menu button, .rules button, .gameEnd button {
     margin-bottom: 3rem; }
 
 nav button {
@@ -117,3 +117,28 @@ main {
 
 .highlight {
   background-color: #FFC857; }
+
+.gameEnd {
+  display: none;
+  background-color: #FFC857;
+  color: #4B3F72;
+  border: 8px dashed #119DA4;
+  margin-top: 10rem;
+  font-size: 2rem;
+  font-weight: bold; }
+  .gameEnd p {
+    padding-bottom: 10rem;
+    width: 65%;
+    margin: auto; }
+  .gameEnd h1 {
+    border-bottom: 2px solid #119DA4;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5rem; }
+  .gameEnd button {
+    background-color: #4B3F72;
+    color: white;
+    border: 5px dotted #4B3F72; }
+    .gameEnd button:hover {
+      background-color: transparent;
+      color: #4B3F72; }

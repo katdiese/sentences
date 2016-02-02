@@ -43,6 +43,7 @@ function getWords() {
     $('#next').on('click', function(){
       if(sentenceLength == $('.highlight').length) {
         score+=sentenceLength;
+        $('#finalScore').html(score);
         $('#score').html('Score: ' + score)
       }
       var nextSentence = findRandSentence(data);

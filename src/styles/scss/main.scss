@@ -187,3 +187,40 @@ main {
   background-color: $yellow;
 }
 
+.gameEnd {
+  display: none;
+  @extend %radius;
+  @extend %menuDivs;
+  background-color: $yellow;
+  color: $purple;
+  border: 8px dashed $lightBlue;
+  margin-top: 10rem;
+  font-size: 2rem;
+  font-weight: bold;
+
+  p {
+    padding-bottom: 10rem;
+    width: 65%;
+    margin: auto;
+  }
+
+  h1 {
+    border-bottom: 2px solid $lightBlue;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+
+  button {
+    @extend %gameButton;
+    background-color: $purple;
+    color: white;
+    border: 5px dotted $purple;
+
+    &:hover {
+      background-color: transparent;
+      color: $purple;
+    }
+  }
+}
+
