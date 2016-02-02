@@ -17,7 +17,7 @@ $(document).ready(function() {
     clearInterval(timer);
     min = 1;
     sec = 30;
-    time = 1000 * 91;
+    time = 1000 * 30;
     timer = setInterval(function() {tick()}, "1000");
     timerStop = setTimeout(function() {clearClock()}, time);
   }

@@ -1,6 +1,9 @@
 // add scripts
 
+var score ;
+
 $(document).on('ready', function() {
+
   buttons();
   getWords();
   // allRight();
@@ -20,12 +23,19 @@ function buttons() {
   $('#startGame').on('click', function() {
     $('.menu').hide();
     $('.gamePlay').show();
+    $('#score').html("Score: 0");
   });
   $('#showMenu').on('click', function() {
     $('.gamePlay').hide();
     $('.menu').fadeIn();
   });
+  $('#endRestart').on('click', function() {
+    $('#gameEnd').hide();
+    $('.menu').fadeIn();
+    $('#score').html("Score: 0");
+  });
 }
+
 
 function getWords() {
     $.ajax({
@@ -33,8 +43,9 @@ function getWords() {
     method: 'GET'
   }).then(function(data) {
     var sentenceLength = 0;
-    var score = 0;
+    // var score = 0;
     $('#startGame').on('click', function() {
+      score = 0;
       var thisSentence = findRandSentence(data);
       sentenceLength = thisSentence.length;
       console.log(sentenceLength);
