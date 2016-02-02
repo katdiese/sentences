@@ -1,29 +1,55 @@
+var min;
+var sec;
+var time;
+var timer;
 $(document).ready(function() {
+
   $('#startGame').on('click', function() {
-    var gameTime = 60 * 1.5,
-        display = $('#time');
-    startTimer(gameTime, display);
+    beginCountdown();
+
+  });
+
+  $('#restartGame').on('click', function() {
+    restart();
+  });
+
+  function beginCountdown() {
+    clearInterval(timer);
+    min = 1;
+    sec = 30;
+    time = 1000 * 91;
+    timer = setInterval(function() {tick()}, "1000");
+    timerStop = setTimeout(function() {clearClock()}, time);
+  }
+
+  function restart() {
+    clearTimeout(timerStop);
+    beginCountdown();
+  }
 
 
-});
+  function tick() {
+    if(min || sec > 0) {
+      if(sec > 0) {
+        sec--;
+      }
+      else if (min > 0) {
+        min--;
+        sec = 59;
+      }
+    }
+    if(sec >= 10) {
+      $('#time').text(min + ": " + sec);
+    }
+    else if(sec < 10)
+      $('#time').text(min + ": 0" + sec);
+  }
 
-  var startTimer = function(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10)
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.text(minutes + ":" + seconds);
-
-        if (--timer < 0) {
-            timer = duration;
-            // clearInterval(timer);
-        }
-    }, 1000);
-}
+  function clearClock() {
+    window.clearInterval(timer);
+    $('main').hide();
+    $('#gameEnd').fadeIn();
+  }
 
 
 });
