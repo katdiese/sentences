@@ -4,8 +4,10 @@ var time;
 var timer;
 $(document).ready(function() {
 
+
   $('#startGame').on('click', function() {
     beginCountdown();
+    secondsPassed();
 
   });
 
@@ -49,6 +51,15 @@ $(document).ready(function() {
     window.clearInterval(timer);
     $('main').hide();
     $('#gameEnd').fadeIn();
+  }
+
+  function secondsPassed() {
+    setInterval(function() {countDown()}, 1000);
+  }
+
+  function countDown() {
+    var timeElapsed = time-= 1000;
+    console.log(timeElapsed);
   }
 
 
