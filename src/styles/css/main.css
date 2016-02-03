@@ -1,7 +1,7 @@
-nav button, .menu button, .rules button, .gameEnd button, nav .player-info, .menu, .rules, .rules .ruleInfo, main .wordbank, main .solution, .wordStyles, .gameEnd {
+nav button, .menu .menuButton, .rules button, main #next, .gameEnd button, nav .player-info, .menu, .rules, .rules .ruleInfo, main .wordbank, main .solution, .wordStyles, .gameEnd {
   border-radius: 10px; }
 
-nav button, .menu button, .rules button, .gameEnd button {
+nav button, .menu .menuButton, .rules button, main #next, .gameEnd button {
   margin-left: 1rem;
   padding: 1rem;
   border: none; }
@@ -39,35 +39,56 @@ nav .player-info {
 .menu {
   z-index: 10000;
   background-color: #119DA4;
-  border: 3px solid #FFC857; }
+  border: 3px solid #FFC857;
+  position: relative; }
   .menu h3 {
     border-bottom: 5px dashed #FFC857;
     width: 85%;
     margin: 2rem auto;
     padding-bottom: 10px; }
-  .menu button {
+  .menu .menuButton {
     margin-top: 3rem;
     background-color: #19647E;
     color: white;
     border: 4px double #19647E; }
-  .menu button:hover {
+  .menu .menuButton:hover {
     background-color: transparent;
     color: #19647E;
     font-weight: bold; }
+  .menu .closeMenu {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    font-weight: bold;
+    background-color: #4B3F72;
+    color: white;
+    border: none;
+    top: 0;
+    right: 0;
+    margin: -10px -10px 0 0;
+    border-radius: 50%; }
   .menu label {
     border: 1px solid #119DA4; }
     .menu label:hover {
       border: 1px dotted #FFC857;
       padding: 0 1rem;
       cursor: pointer; }
+    .menu label[for="insanity"] {
+      text-shadow: 1px 1px red; }
   .menu input {
     margin-right: 10px; }
 
 .rules {
   background-color: #4B3F72;
   display: none; }
+  .rules li {
+    list-style: square;
+    list-style-position: inside;
+    padding: 10px; }
   .rules h1 {
     color: #FFC857; }
+  .rules h4 {
+    text-shadow: 2px 2px #FFC857; }
   .rules button {
     background-color: #FFC857;
     border: 4px double #FFC857;
@@ -80,7 +101,8 @@ nav .player-info {
     margin: 1rem auto;
     padding: 0.5rem 1rem;
     background-color: white;
-    font-weight: bold; }
+    font-weight: bold;
+    border: 2px solid #FFC857; }
 
 main {
   display: none;
@@ -97,7 +119,17 @@ main {
     height: 100vh;
     width: 75%;
     margin: auto;
-    background-color: #a8a8a8; }
+    background-color: #a8a8a8;
+    margin-bottom: 3rem; }
+  main #next {
+    width: 10rem;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    background-color: #4B3F72;
+    color: white; }
+    main #next:hover {
+      background-color: #352d51; }
 
 .wordStyles {
   background: #4B3F72;

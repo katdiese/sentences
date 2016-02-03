@@ -66,6 +66,7 @@ nav {
   z-index: 10000;
   background-color: $lightBlue;
   border: 3px solid $yellow;
+  position: relative;
 
 
   h3 {
@@ -75,7 +76,7 @@ nav {
     padding-bottom: 10px;
   }
 
-  button {
+  .menuButton {
     @extend %gameButton;
     margin-top: 3rem;
     background-color: $turquoise;
@@ -83,10 +84,24 @@ nav {
     border: 4px double $turquoise;
   }
 
-  button:hover {
+  .menuButton:hover {
     background-color: transparent;
     color: $turquoise;
     font-weight: bold;
+  }
+
+  .closeMenu {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    font-weight: bold;
+    background-color: $purple;
+    color: white;
+    border: none;
+    top: 0;
+    right: 0;
+    margin: -10px -10px 0 0;
+    border-radius: 50%;
   }
 
   label {
@@ -96,7 +111,11 @@ nav {
     border: 1px dotted $yellow;
     padding: 0 1rem;
     cursor: pointer;
-  }
+    }
+
+    &[for="insanity"] {
+      text-shadow: 1px 1px red;
+    }
   }
 
   input {
@@ -110,8 +129,18 @@ nav {
   background-color: $purple;
   display: none;
 
+
+  li {
+    list-style: square;
+    list-style-position: inside;
+    padding: 10px;
+  }
+
   h1 {
     color: $yellow;
+  }
+  h4 {
+    text-shadow: 2px 2px $yellow;
   }
 
   button {
@@ -133,6 +162,7 @@ nav {
     padding: 0.5rem 1rem;
     background-color: white;
     font-weight: bold;
+    border: 2px solid $yellow;
   }
 }
 
@@ -157,6 +187,21 @@ main {
     width: 75%;
     margin: auto;
     background-color: $darkGray;
+    margin-bottom: 3rem;
+  }
+
+  #next {
+    @extend %gameButton;
+    width: 10rem;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    background-color: $purple;
+    color: white;
+
+    &:hover {
+      background-color: darken($purple, 10%);
+    }
   }
 
 }
