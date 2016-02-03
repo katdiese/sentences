@@ -191,7 +191,8 @@ main {
   display: none;
   @extend %radius;
   @extend %menuDivs;
-  background-color: $yellow;
+  background: url(../../images/kitteh.jpeg);
+  background-size: cover;
   color: $purple;
   border: 8px dashed $lightBlue;
   margin-top: 10rem;

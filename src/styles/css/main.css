@@ -120,7 +120,8 @@ main {
 
 .gameEnd {
   display: none;
-  background-color: #FFC857;
+  background: url(../../images/kitteh.jpeg);
+  background-size: cover;
   color: #4B3F72;
   border: 8px dashed #119DA4;
   margin-top: 10rem;
