@@ -22,6 +22,7 @@ $darkGray: #a8a8a8;
   height: 100%;
   width: 55%;
   margin: auto;
+  margin-bottom: 10rem;
 
   h1 {
     padding-top: 3rem;
@@ -64,6 +65,8 @@ nav {
   @extend %menuDivs;
   z-index: 10000;
   background-color: $lightBlue;
+  border: 3px solid $yellow;
+
 
   h3 {
     border-bottom: 5px dashed $yellow;
