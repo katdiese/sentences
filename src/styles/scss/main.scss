@@ -33,6 +33,7 @@ $darkGray: #a8a8a8;
 }
 
 nav {
+  display: none;
   button {
     @extend %gameButton;
     background-color: $darkBlue;
@@ -61,6 +62,7 @@ nav {
 
 .menu {
   // display: none;
+  margin-top: 7rem;
   @extend %radius;
   @extend %menuDivs;
   z-index: 10000;
@@ -91,6 +93,7 @@ nav {
   }
 
   .closeMenu {
+    display: none;
     position: absolute;
     height: 3rem;
     width: 3rem;
