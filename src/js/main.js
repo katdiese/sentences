@@ -3,6 +3,7 @@
 var score;
 var easy;
 var hard;
+var shake;
 
 $(document).on('ready', function() {
 
@@ -49,7 +50,6 @@ function getWords() {
     method: 'GET'
   }).then(function(data) {
     var sentenceLength = 0;
-    // var score = 0;
     $('#startGame').on('click', function() {
       checkDifficultyLevel();
       score = 0;
@@ -74,9 +74,6 @@ function getWords() {
       var thisSentence = findRandSentence(data);
       nextRound(thisSentence);
     });
-    // $("#next").on('click', function() {
-    //   checkCorrect(thisSentence);
-    // });
   });
 }
 
@@ -95,12 +92,19 @@ function checkDifficultyLevel() {
         console.log("easy checked!");
         easy = true;
         hard = false;
+        shake = false;
       }
   else if($('input:checked').val() === "hard") {
         console.log("Hard checked!");
         hard = true;
         easy = false;
+        shake = false;
       }
+  else if($('input:checked').val() === "insanity") {
+    hard = true;
+    easy = false;
+    shake = true;
+  }
   else {
         easy = true;
         hard = false;
@@ -117,6 +121,11 @@ function scrambleSentence(sentence) {
     currDragClass = dragClass(sentence[randIndex]);
     $('#wordbank').append('<div class= "wordStyles" id= '+currDragClass+'><p>' + sentence[randIndex] + '</p></div>');
     $('.wordStyles').draggable();
+    if(shake === true) {
+      $('.wordStyles').addClass("shake-crazy shake-constant shake-constant--hover");
+    } else {
+      $('.wordStyles').removeClass("shake-crazy shake-constant shake-constant--hover");
+    }
     sentence.splice(randIndex, 1);
     sentLength--;
   }
