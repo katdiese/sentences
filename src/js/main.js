@@ -39,7 +39,9 @@ function buttons() {
   $('#endRestart').on('click', function() {
     $('#gameEnd').hide();
     $('.menu').fadeIn();
+    $('#time').html("1:30");
     $('#score').html("Score: 0");
+    $('body').removeClass('insanityBackground');
   });
 }
 
@@ -123,6 +125,7 @@ function scrambleSentence(sentence) {
     $('.wordStyles').draggable();
     if(shake === true) {
       $('.wordStyles').addClass("shake-crazy shake-constant shake-constant--hover");
+      $('body').addClass("insanityBackground");
     } else {
       $('.wordStyles').removeClass("shake-crazy shake-constant shake-constant--hover");
     }

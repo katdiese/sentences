@@ -146,6 +146,10 @@ main {
       background-color: transparent;
       color: #4B3F72; }
 
+.insanityBackground {
+  background-image: url(../../images/angry-cat1.jpg);
+  background-repeat: repeat; }
+
 .shake-crazy {
   display: inline-block;
   transform-origin: center center; }
