@@ -31,6 +31,7 @@ function buttons() {
     $('.menu').hide();
     $('.gamePlay').show();
     $('#score').html("Score: 0");
+    $('nav').show();
   });
   $('#showMenu').on('click', function() {
     $('.gamePlay').hide();
@@ -42,6 +43,9 @@ function buttons() {
     $('#time').html("1:30");
     $('#score').html("Score: 0");
     $('body').removeClass('insanityBackground');
+  });
+  $('#showMenu').on('click', function() {
+    location.reload();
   });
 }
 
@@ -73,6 +77,7 @@ function getWords() {
     $('#restartGame').on('click', function(){
       $('#wordbank').empty();
       $('#solution').empty();
+      $('#time').html('1:30');
       var thisSentence = findRandSentence(data);
       nextRound(thisSentence);
     });

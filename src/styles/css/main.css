@@ -17,26 +17,26 @@ nav button, .menu .menuButton, .rules button, main #next, .gameEnd button {
   .menu button, .rules button, .gameEnd button {
     margin-bottom: 3rem; }
 
-nav button {
-  background-color: #1F2041;
-  color: white;
-  font-weight: bold;
-  border: 4px dotted #1F2041; }
-
-nav button:hover {
-  background: transparent;
-  color: #1F2041; }
-
-nav img {
-  padding: 2rem; }
-
-nav .player-info {
-  float: right;
-  padding: 2rem;
-  margin: 1rem;
-  border: 4px solid black; }
+nav {
+  display: none; }
+  nav button {
+    background-color: #1F2041;
+    color: white;
+    font-weight: bold;
+    border: 4px dotted #1F2041; }
+  nav button:hover {
+    background: transparent;
+    color: #1F2041; }
+  nav img {
+    padding: 2rem; }
+  nav .player-info {
+    float: right;
+    padding: 2rem;
+    margin: 1rem;
+    border: 4px solid black; }
 
 .menu {
+  margin-top: 7rem;
   z-index: 10000;
   background-color: #119DA4;
   border: 3px solid #FFC857;
@@ -56,6 +56,7 @@ nav .player-info {
     color: #19647E;
     font-weight: bold; }
   .menu .closeMenu {
+    display: none;
     position: absolute;
     height: 3rem;
     width: 3rem;

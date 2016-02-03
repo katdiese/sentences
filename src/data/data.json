@@ -29,20 +29,20 @@
     "sentStr":"When a dog food is new and improved flavor, who tests it?"
     },
     {
-    "sentArr": ["Dogs", "need", "masters,", "Cats", "have", "staff."],
-    "sentStr": "Dogs have masters, Cats need staff."
+    "sentArr": ["Dogs", "have", "masters; ", "Cats:", "staff."],
+    "sentStr": "Dogs have masters; Cats: staff."
     },
     {
-    "sentArr": ["I", "intend", "to", "live", "forever:", "so", "far,", "so", "good."],
-    "sentStr":"I intend to live forever: so far, so good."
+    "sentArr": ["I", "intend", "to", "live", "forever:", "so", "far,", "I'm", "good."],
+    "sentStr":"I intend to live forever: so far, I'm good."
     },
     {
     "sentArr": ["Why", "didn’t", "Noah", "swat", "those", "two", "mosquitoes?"],
     "sentStr":"Why didnt Noah swat those two mosquitoes?"
     },
     {
-    "sentArr": ["It’s", "true", "hard", "work", "never", "killed", "anybody,", "but", "why", "take", "the", "chance?"],
-    "sentStr":"It’s true hard work never killed anybody, but why take the chance?"
+    "sentArr": ["It’s", "true", "that", "hard", "work", "never", "killed", "anybody,", "but", "why", "take", "the", "chance?"],
+    "sentStr":"It’s true that hard work never killed anybody, but why take the chance?"
     },
     {
     "sentArr": ["Don't", "take", "life", "too", "seriously,", "you'll", "never", "get", "out", "of", "it", "alive."],
@@ -93,12 +93,28 @@
     "sentStr": "We shall never know all the good that a simple smile can do."
     },
     {
-    "sentArr": ["Most", "folks", "are", "as", "happy", "as", "they", "make", "up", "their", "minds", "to", "be."],
-    "sentStr": "Most folks are as happy as they make up their minds to be."
+    "sentArr": ["Procrastination", "is", "the", "art", "of", "keeping", "up", "with", "yesterday."],
+    "sentStr": "Procrastination is the art of keeping up with yesterday."
     },
     {
-    "sentArr": ["Whatever", "you", "do", "in", "life,", "surround", "yourself", "with", "smart", "people", "who'll", "argue", "with", "you."],
-    "sentStr": "Whatever you do in life, surround yourself with smart people who'll argue with you."
+    "sentArr": ["No", "man", "has", "a", "good", "enough", "memory", "to", "be", "a", "successful", "liar."],
+    "sentStr": "No man has a good enough memory to be a successful liar"
+    },
+    {
+    "sentArr": ["Why", "do", "they", "call", "it", "rush", "hour", "when", "nothing", "moves?"],
+    "sentStr": "Why do they call it rush hour when nothing moves?"
+    },
+    {
+    "sentArr": ["Beer", "is", "proof", "that", "God", "loves", "us", "and", "cares", "about", "our", "happiness."],
+    "sentStr": "Beer is proof that God loves us and cares about our happiness"
+    },
+    {
+    "sentArr": ["All", "generalizations", "are", "false,", "including", "this", "one."],
+    "sentStr": "All generalizations are false, including this one."
+    },
+    {
+    "sentArr": ["Progress", "is", "man's", "ability", "to", "complicate", "simplicity."],
+    "sentStr": "Progress is man's ability to complicate simplicity"
     }
 
   ]
