@@ -4,8 +4,10 @@ var score;
 var easy;
 var hard;
 var shake;
+var correctAudio = new Audio('../sounds/243701__ertfelda__correct.wav');
 
 $(document).on('ready', function() {
+
 
   $('input').on('checked', function(){
     console.log('checked');
@@ -65,7 +67,9 @@ function getWords() {
       nextRound(thisSentence);
     });
     $('#next').on('click', function(){
-      if(sentenceLength == $('.highlight').length || $('.correct').length) {
+      if(sentenceLength === $('.highlight').length || sentenceLength === $('.correct').length) {
+        console.log(sentenceLength);
+        console.log($('.correct').length);
         score+=sentenceLength;
         $('#finalScore').html(score);
         $('#score').html('Score: ' + score)
@@ -154,6 +158,7 @@ function droppableInOrder(sentence) {
         if(easy) {
           $(this)
             .addClass('highlight');
+          correctAudio.play();
           }
         else if(hard) {
           $(this)
