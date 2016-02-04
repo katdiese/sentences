@@ -4,7 +4,7 @@ var score;
 var easy;
 var hard;
 var shake;
-var correctAudio = new Audio('../sounds/253887__themusicalnomad__positive-beeps.wav');
+var correctAudio = new Audio('../sounds/243701__ertfelda__correct.wav');
 
 $(document).on('ready', function() {
 
