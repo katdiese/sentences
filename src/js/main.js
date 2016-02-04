@@ -4,7 +4,9 @@ var score;
 var easy;
 var hard;
 var shake;
+
 var correctAudio = new Audio('../sounds/243701__ertfelda__correct.wav');
+var nextAudio = new Audio('../sounds/128919__ecfike__click-2.wav')
 
 $(document).on('ready', function() {
 
@@ -35,16 +37,20 @@ function buttons() {
     $('#score').html("Score: 0");
     $('nav').show();
   });
+  // $('#showMenu').on('click', function() {
+  //   $('.gamePlay').hide();
+  //   $('.menu').fadeIn();
+  // });
   $('#showMenu').on('click', function() {
-    $('.gamePlay').hide();
-    $('.menu').fadeIn();
+    location.reload();
   });
   $('#endRestart').on('click', function() {
-    $('#gameEnd').hide();
-    $('.menu').fadeIn();
-    $('#time').html("1:30");
-    $('#score').html("Score: 0");
-    $('body').removeClass('insanityBackground');
+    // $('#gameEnd').hide();
+    // $('.menu').fadeIn();
+    // $('#time').html("1:30");
+    // $('#score').html("Score: 0");
+    // $('body').removeClass('insanityBackground');
+    location.reload();
   });
   $('#showMenu').on('click', function() {
     location.reload();
@@ -67,13 +73,14 @@ function getWords() {
       nextRound(thisSentence);
     });
     $('#next').on('click', function(){
+      nextAudio.play();
       if(sentenceLength === $('.highlight').length || sentenceLength === $('.correct').length) {
         console.log(sentenceLength);
         console.log($('.correct').length);
         score+=sentenceLength;
         $('#finalScore').html(score);
-        $('#score').html('Score: ' + score)
-      }
+        $('#score').html('Score: ' + score);
+            }
       var nextSentence = findRandSentence(data);
       sentenceLength = nextSentence.length;
       nextRound(nextSentence);

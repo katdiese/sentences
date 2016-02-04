@@ -9,10 +9,6 @@
     "sentStr": "Please don't interrupt me while I'm ignoring you."
     },
     {
-    "sentArr": ["A", "wise", "man", "once", "said,", "\"I", "don't", "know,", "go", "ask", "a", "woman.\""],
-    "sentStr": "A wise man once said, \"I don't know, go ask a woman.\""
-    },
-    {
     "sentArr": ["Don't", "be", "so", "open-minded", "your", "brains", "fall", "out."],
     "sentStr": "Don't be so open-minded your brains fall out."
     },
