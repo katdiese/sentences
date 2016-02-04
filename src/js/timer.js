@@ -4,15 +4,20 @@ var time;
 var timer;
 $(document).ready(function() {
 
+  var clockAudio = new Audio('../sounds/27086__daveincamas__mantelclockticks.wav');
+  var dingAudio = new Audio('../sounds/23152__owlstorm__ding.wav');
+  var startAudio = new Audio('../sounds/243020__plasterbrain__game-start.ogg')
 
   $('#startGame').on('click', function() {
     beginCountdown();
     secondsPassed();
-
+    startAudio.play();
   });
 
   $('#restartGame').on('click', function() {
+    clockAudio.pause();
     restart();
+    beginCountdown();
   });
 
   function beginCountdown() {
@@ -26,8 +31,10 @@ $(document).ready(function() {
 
   function restart() {
     clearTimeout(timerStop);
-    beginCountdown();
+    // beginCountdown();
   }
+
+
 
 
   function tick() {
@@ -54,11 +61,18 @@ $(document).ready(function() {
   }
 
   function secondsPassed() {
-    setInterval(function() {countDown()}, 1000);
+    setInterval(function() {lastScramble()}, 1000);
   }
 
-  function countDown() {
+  function lastScramble() {
     var timeElapsed = time-= 1000;
+    if(timeElapsed === 10000) {
+      clockAudio.play();
+      setTimeout(function() { clockAudio.pause(); }, 10000);
+    }
+    else if(timeElapsed === 0) {
+      dingAudio.play();
+    }
     // console.log(timeElapsed);
   }
 
